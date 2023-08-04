@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>画像発射</title>
+    <style>
+        .image {
+            position: absolute;
+            transform-origin: top left;
+        }
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* ボタンを最前面に表示 */
+        }
+        .launch-button {
+            background-color: #FFF; /* White color */
+        }
+        .music-button {
+            background-color: #FF0; /* Yellow color */
+        }
+        .stop-button {
+            display: none;
+            background-color: #F00; /* Red color */
+        }
+    </style>
+</head>
+<body style="background-image: url('https://sozaino.site/wp-content/uploads/2022/09/amai3.png');">
+    <div class="button-container">
+        <button class="music-button" onclick="playMusic()">🎶</button>
+        <button class="launch-button" onclick="startLaunching()" id="launchButton">💙 発射</button>
+        <button class="stop-button" onclick="stopLaunching()" id="stopButton">☣ 停止</button>
+    </div>
+
+    <script>
+        var imageUrls = [
+            "https://dic.nicovideo.jp/oekaki/738826.png",
+            "https://appliv-domestic.akamaized.net/v1/600x/r/screenshots/543097554/23230b37c1b52c5e5dad91b6caa9fe2e.jpeg",
+            "https://image.yoyaku-top10.jp/uploads/application/icon/2479/4/73d03a9b-bca0-4088-b3a1-bafadfabae53.jpg",
+            "",
+            "",
+            "https://news.mynavi.jp/article/20140611-a437/index_images/index.jpg",
+            "https://m.media-amazon.com/images/I/61NYB1xg6uL._AC_SX679_.jpg",
+            "https://st2.depositphotos.com/1268628/10355/i/600/depositphotos_103556100-stock-photo-ghost-girlhorror-background-for-halloween.jpg"
+        ];
+
+        var intervalId;
+        var activeImages = [];
+        var isFiring = false;
+        var isLastImageBGMPlaying = false;
+        var isStopped = false;
+
+        var backgroundColors = [
+            "red",
+            "black"
+        ];
+        var currentBackgroundColorIndex = 0;
+        var backgroundColorIntervalId;
+
+        var bgmFire = new Audio("nc67460.wav"); // BGM for launching images
+        var bgmLastImage = new Audio("nc296579.wav"); // BGM for last image proliferation
+        var bgmMain = new Audio("nc303825.wav"); // Main BGM
+
+        // Function to get a random image URL from the array
+        function getRandomImageUrl() {
+            var availableUrls = imageUrls.filter(function(url) {
+                return url !== "";
+            });
+            var randomIndex = Math.floor(Math.random() * availableUrls.length);
+            return availableUrls[randomIndex];
+        }
+
+        // Function to animate the image movement (with opacity adjustment)
+        function animateImage(imageElement, isLastImage) {
+            var startX = window.innerWidth / 2; // Initial X position of the image
+            var startY = window.innerHeight / 2; // Initial Y position of the image
+
+            var targetX = Math.random() * window.innerWidth; // Target X position
+            var targetY = Math.random() * window.innerHeight; // Target Y position
+
+            var dx = targetX - startX; // Distance in X direction
+            var dy = targetY - startY; // Distance in Y direction
+
+            var distance = Math.sqrt(dx * dx + dy * dy); // Total distance to move
+            var speed = 2000; // Movement speed in pixels per second
+            var duration = distance / speed * 1000; // Animation duration in milliseconds
+
+            var startScale = 0.1; // Initial scale
+            var targetScale = 1.0; // Target scale
+
+            var startOpacity = 0.1; // Initial opacity (0.1 for semi-transparent)
+            var targetOpacity = 1.0; // Target opacity (1.0 for fully opaque)
+
+            var startTime = null;
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+
+                var progress = timestamp - startTime;
+                var fraction = Math.min(progress / duration, 1);
+
+                var x = startX + dx * fraction;
+                var y = startY + dy * fraction;
+
+                var scale = startScale + (targetScale - startScale) * fraction;
+                var opacity = startOpacity + (targetOpacity - startOpacity) * fraction; // Calculate the opacity based on the current fraction
+
+                imageElement.style.transform = "translate(-50%, -50%) scale(" + scale + ")";
+                imageElement.style.opacity = opacity; // Set the opacity based on the calculated value
+
+                imageElement.style.left = x + "px";
+                imageElement.style.top = y + "px";
+
+                if (fraction < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    imageElement.remove();
+                    activeImages = activeImages.filter(function(el) {
+                        return el !== imageElement;
+                    });
+
+                    // If it's the last image, play the special BGM
+                    if (activeImages.length === 0 && isFiring && !isLastImageBGMPlaying && !isStopped) {
+                        playLastImageBGM();
+                    }
+                }
+            }
+
+            requestAnimationFrame(step);
+        }
+
+        // Function to launch a specified number of images
+        function launchImages(count) {
+            for (var i = 0; i < count; i++) {
+                var url = getRandomImageUrl();
+
+                var imageElement = document.createElement("img");
+                imageElement.src = url;
+                imageElement.classList.add("image");
+
+                document.body.appendChild(imageElement);
+                activeImages.push(imageElement);
+
+                // Check if it's the last image and pass that information to the animateImage function
+                var isLastImage = activeImages.length === 0 && isFiring;
+
+                animateImage(imageElement, isLastImage);
+            }
+        }
+
+        // Function to start the image launching
+        function startLaunching() {
+            if (!isFiring) {
+                isFiring = true;
+                intervalId = setInterval(function() {
+                    launchImages(15); // Launch 15 images per second
+                }, 1000 / 15);
+                startBackgroundColorChange();
+                bgmFire.loop = true; // Loop the firing BGM
+                bgmFire.play(); // Play the firing BGM
+                document.querySelector('.launch-button').style.display = 'none';
+                document.querySelector('.stop-button').style.display = 'block';
+                document.querySelector('.music-button').style.display = 'none';
+                document.body.style.backgroundImage = "url('https://png.pngtree.com/thumb_back/fw800/background/20210331/pngtree-gradient-red-background-blood-style-splash-background-image_600105.jpg')"; // Set background image after firing
+            }
+        }
+
+        // Function to stop the image launching
+        function stopLaunching() {
+            if (isFiring) {
+                isFiring = false;
+                clearInterval(intervalId); // Stop launching
+                clearInterval(backgroundColorIntervalId); // Stop background color change
+                stopLastImageBGM(); // Stop the special BGM
+                bgmFire.pause(); // Pause the firing BGM
+                bgmFire.currentTime = 0; // Reset the firing BGM time to the beginning
+                document.querySelector('.stop-button').style.display = 'none';
+                document.querySelector('.music-button').style.display = 'block';
+                document.body.style.backgroundImage = "url('https://livedoor.sp.blogimg.jp/karapaia_zaeega/imgs/0/0/00a316ea.jpg')"; // Set background image after stopping
+                startBackgroundAnimation();
+                isStopped = true;
+                bgmMain.pause(); // Pause the main BGM
+                bgmMain.currentTime = 0; // Reset the main BGM time to the beginning
+                playLastImageBGM(); // Start playing the special BGM after stopping
+
+                // Reset after 15 seconds
+                setTimeout(function() {
+                    resetAll();
+                }, 15000);
+            }
+        }
+
+        // Function to start changing background color
+        function startBackgroundColorChange() {
+            backgroundColorIntervalId = setInterval(changeBackgroundColor, 1000 / 3); // Change background color 3 times per second
+        }
+
+        // Function to stop changing background color
+        function stopBackgroundColorChange() {
+            clearInterval(backgroundColorIntervalId);
+        }
+
+        // Function to change background color
+        function changeBackgroundColor() {
+            currentBackgroundColorIndex = (currentBackgroundColorIndex + 1) % backgroundColors.length;
+            var backgroundColor = backgroundColors[currentBackgroundColorIndex];
+            document.body.style.backgroundColor = backgroundColor;
+        }
+
+        // Function to animate background image growth with a delay
+        function startBackgroundAnimation() {
+            var bgImage = new Image();
+            bgImage.src = "https://livedoor.sp.blogimg.jp/karapaia_zaeega/imgs/0/0/00a316ea.jpg";
+            bgImage.style.position = "absolute";
+            bgImage.style.pointerEvents = "none";
+            document.body.appendChild(bgImage);
+
+            var bgImageIntervalId;
+
+            // Start background image growth after a 3-second delay
+            setTimeout(function() {
+                bgImageIntervalId = setInterval(function() {
+                    var clone = bgImage.cloneNode();
+                    clone.style.left = Math.random() * window.innerWidth + "px";
+                    clone.style.top = Math.random() * window.innerHeight + "px";
+                    clone.style.width = "300px"; // Set the width of the cloned image to 300px (10 times larger)
+                    clone.style.height = "300px"; // Set the height of the cloned image to 300px (10 times larger)
+                    clone.style.opacity = "0.8"; // Set the opacity of the cloned image to 0.8 (darker)
+                    document.body.appendChild(clone);
+
+                    setTimeout(function() {
+                        clone.remove();
+                    }, 5000); // Remove the cloned image after 5 seconds
+                }, 10); // Create a new clone every 10 milliseconds (100 images per second)
+            }, 3000); // Delay the start of background image growth by 3 seconds
+
+            setTimeout(function() {
+                clearInterval(bgImageIntervalId);
+                bgImage.remove();
+            }, 8000); // Stop creating clones after 8 seconds (3 seconds delay + 5 seconds growth)
+        }
+
+        // Function to play the special background music for the last image proliferation
+        function playLastImageBGM() {
+            isLastImageBGMPlaying = true;
+            bgmLastImage.loop = true; // Loop the last image BGM
+            bgmLastImage.playbackRate = 1.5; // Set the playback rate to 1.5 times
+            bgmLastImage.play(); // Play the last image BGM
+            duplicateLastImageBGM();
+        }
+
+        // Function to duplicate the last image BGM every 0.1 seconds
+        function duplicateLastImageBGM() {
+            setInterval(function() {
+                var duplicate = new Audio("nc296579.wav");
+                duplicate.loop = true;
+                duplicate.playbackRate = 1.5;
+                duplicate.play();
+            }, 100); // Duplicate the BGM every 0.1 seconds (100 milliseconds)
+        }
+
+        // Function to stop the special background music
+        function stopLastImageBGM() {
+            isLastImageBGMPlaying = false;
+            bgmLastImage.pause();
+            bgmLastImage.currentTime = 0;
+        }
+
+        // Function to play the music
+        function playMusic() {
+            bgmMain.loop = true; // Loop the main BGM
+            bgmMain.play(); // Play the main BGM from the beginning
+        }
+
+        // Function to reset all the parameters and elements to the initial state
+        function resetAll() {
+            isFiring = false;
+            isLastImageBGMPlaying = false;
+            isStopped = false;
+            activeImages = [];
+            clearInterval(intervalId);
+            clearInterval(backgroundColorIntervalId);
+            stopLastImageBGM();
+            bgmFire.pause();
+            bgmFire.currentTime = 0;
+            bgmMain.pause();
+            bgmMain.currentTime = 0;
+            document.querySelector('.launch-button').style.display = 'block';
+            document.querySelector('.stop-button').style.display = 'none';
+            document.querySelector('.music-button').style.display = 'block';
+            document.body.style.backgroundImage = "url('https://sozaino.site/wp-content/uploads/2022/09/amai3.png')";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>
