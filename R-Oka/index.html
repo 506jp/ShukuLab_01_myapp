@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+  <head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>quiz with Bootstrap</title>
+  </head>
+  
+  <body>
+    <!-- タイトル -->
+    <div class="container" id="title">
+      <div class="row mt-5">
+        <div class="col text-center">
+          <h1 id="title">診断サイト</h1>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col text-center">
+          <h2>今の自分の気分に合ったアニメがわかる！</h2>
+          <h3>早速やってみよう！</h3>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col text-center">
+          <a class="btn-move" href="#q1"><button type="button" class="btn btn-primary btn-lg">START</button></a>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col text-center">
+          <button id="btnPrint" class='no-print btn btn-secondary'>Print</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="q1">
+      <div class="row mt-5">
+        <div class="col text-center">
+        <h1>第１問</h1>
+        </div>
+      </div>
+      <div class="row  mt-2">
+        <div class="col text-center">
+          <p class="question">今の気分は？</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <img src="https://3.bp.blogspot.com/-KmQQLtEkmLw/U1T3r7D0NdI/AAAAAAAAfVI/c2d4n2kG00U/s800/figure_question.png">
+      </div>
+      <div class="row">
+        <div class="btn-group-vertical">
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-fine"><button type="button" class="btn btn-info btn-lg">元気</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-sleep"><button type="button" class="btn btn-info btn-lg">眠い</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-hungry"><button type="button" class="btn btn-info btn-lg">お腹空いた</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-tired"><button type="button" class="btn btn-info btn-lg">疲れている</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-happy"><button type="button" class="btn btn-info btn-lg">嬉しい</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-sad"><button type="button" class="btn btn-info btn-lg">悲しい</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-ira"><button type="button" class="btn btn-info btn-lg">イライラしている</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-ochi"><button type="button" class="btn btn-info btn-lg">落ち着いている</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-shiawase"><button type="button" class="btn btn-info btn-lg">幸せ</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-normal"><button type="button" class="btn btn-info btn-lg">普通</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-samishi"><button type="button" class="btn btn-info btn-lg">寂しい</button></a>
+        </div>
+        <div class="col-12 col-sm text-center mt-2">
+          <a class="btn-move" href="#q1-kincho"><button type="button" class="btn btn-info btn-lg">緊張</button></a>
+        </div>
+        </div>
+      </div>
+      <br>
+      <div class="row mb-2">
+        <div class="col text-center mt-2">
+          <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+        </div>
+      </div>
+    </div>
+
+  <div class="container" id="q1-fine">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">運動したいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://3.bp.blogspot.com/-t3FRnbAsPwY/V6BP6giatRI/AAAAAAAA83o/XaK3L9BpNkUZpVACZRvMTGBprlw7e-raQCLcB/s800/figure_hashiru.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes1"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no1"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-sleep">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>第２問</h1>
+      </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">起きたいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://2.bp.blogspot.com/-7uABT-Wk3BI/UR2ivt7em6I/AAAAAAAAMxo/-Ar-3YFB-l8/s1600/neoki_boy_sawayaka.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes2"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no2"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-hungry">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">料理です！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#cook"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-tired">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">最近どんなことでストレスを感じましたか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://3.bp.blogspot.com/-YrNnTPo7_8c/UxbLq8NL0pI/AAAAAAAAeCY/RpKtutaxn78/s800/stress_man.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-work"><button type="button" class="btn btn-info btn-lg">仕事</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-study"><button type="button" class="btn btn-info btn-lg">学業</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-human"><button type="button" class="btn btn-info btn-lg">人間関係</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-helth"><button type="button" class="btn btn-info btn-lg">健康</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-happy">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">最近楽しいと感じた時間は？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://2.bp.blogspot.com/-MNaY2KU4Jlc/VKTgozDP-PI/AAAAAAAAqVo/_tQPERC0q9c/s800/pyoko08_nyudougumo.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-hobby"><button type="button" class="btn btn-info btn-lg">趣味の時間</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-family"><button type="button" class="btn btn-info btn-lg">家族との時間</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-friend"><button type="button" class="btn btn-info btn-lg">友人との時間</button></a>
+      </div>      
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-sad">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">気持ちを落ち着かせたいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://4.bp.blogspot.com/-BOFgq2vPEeI/UnIENrxSEoI/AAAAAAAAaAU/mVGREFrj4Tg/s800/room_living.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes3"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no3"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-ira">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">怒りを加速させたいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://3.bp.blogspot.com/-tSzqnc5n4ak/UNQrWx6BLrI/AAAAAAAAI6g/wvAwk_K1Avg/s1600/mark_face_angry.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes4"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no4"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-ochi">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">気分を上げたいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://3.bp.blogspot.com/-EiXYEupK6dg/Uj_2I4uJS1I/AAAAAAAAX7A/8a5tmIxyV-Q/s800/kanransya.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes5"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no5"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-shiawase">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">このままの気分でいたいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://3.bp.blogspot.com/-4wWxEXiD0F8/UZB6XlK0tuI/AAAAAAAASCU/KmzPAv83LLg/s800/niji.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes6"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no6"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-normal">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">今、頭が冴えていますか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://2.bp.blogspot.com/-ABYlkN7syq8/Wi4fuPh2YpI/AAAAAAABIqM/Z_KN5MWz0uwrc0sHRi5fmoCPvG9BaBuGQCLcBGAs/s800/animal_chara_fukurou_hakase.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes7"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no7"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-samishi">
+    <div class="col text-center">
+     <div class="row mt-5">
+      <h1>第２問</h1>
+     </div>
+    </div>
+    <div class="row  mt-2">
+      <div class="col text-center">
+        <p class="question">このままの気分でいたいですか？</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <img src="https://1.bp.blogspot.com/-SPNM-sKcp3w/VOsXOvJOpoI/AAAAAAAAr2w/S3DBC5_woaA/s800/water_shizuku.png">
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-yes8"><button type="button" class="btn btn-primary btn-lg">はい</button></a>
+      </div>
+      <div class="col-12 col-sm text-center mt-2">
+        <a class="btn-move" href="#q2-no8"><button type="button" class="btn btn-danger btn-lg">いいえ</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-secondary btn-lg">戻る</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q1-kincho">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">コメディです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#come"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div> 
+
+  <div class="container" id="q2-yes1">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">アクションです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#action"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no1">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">日常です！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#nichijyou"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes2">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ホラーです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#hora"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no2">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメ、本のジャンルは・・・</h1>
+        <p class="Condition-text">ファンタジーです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#fantasy"><button type="button" class="btn btn-danger btn-lg">推しについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-work">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">日常です！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#nichijyou"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-study">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ヒューマンドラマです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#humandrama"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-human">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">青春ものです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#seishun"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-helth">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">スポーツです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#sport"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-hobby">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">アイドルです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#idol"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-family">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">日常です！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#nichijyou"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-friend">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ラブコメです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#love"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes3">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ファンタジーです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#fantasy"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no3">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">感動ものです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#kando"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes4">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">悪役令嬢です！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#darkhiro"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no4">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ラブコメです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#love"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes5">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">コメディです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#come"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no5">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ホラーです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#hora"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes6">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">日常です！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#nichijyou"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no6">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">鬱ものです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#utu"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes7">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ミステリーです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#mystery"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no7">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ラブコメです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#love"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-yes8">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">ヒューマンドラマです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#humandrama"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="q2-no8">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>今のあなたにおすすめのアニメのジャンルは・・・</h1>
+        <p class="Condition-text">動物ものです！</p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#animal"><button type="button" class="btn btn-danger btn-lg">おすすめのアニメについて知る！</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="action">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>アクションのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>鬼滅の刃</b>
+          <br>主人公である竈門炭治郎は鬼に家族を食い殺されてしまいます。その中で妹である禰豆子は唯一、一命を取り留めるものの鬼になってしまいます。その妹を人間に戻すために炭治郎は鬼と戦う鬼狩りの組織、鬼殺隊に入隊します。そうして炭治郎の壮絶な戦いが始まりました。 
+          <br><a href="https://kimetsu.com/anime/">アニメ「鬼滅の刃」公式ポータルサイト</a>
+        </p>
+        <p class="Condition-text"><b>呪術廻戦</b>
+         <br>主人公である虎杖悠仁が通っている学校に呪霊が現れます。人間の負の感情が「呪い」となり、それが化け物になったものを「呪霊」といいます。また呪霊を呪術師が呪術を用いて倒していきます。ある理由から虎杖は呪いを廻る戦いの世界へと入っていくこととなります。
+         <br><a href="https://jujutsukaisen.jp/">TVアニメ「呪術廻戦」公式サイト</a>
+        </p>       
+        <p class="Condition-text"><b>鋼の錬金術師</b>
+         <br>鋼の錬金術師は、母を生き返らせるために禁断の錬金術を使って失った弟アルの身体と兄エドの腕を取り戻すために賢者の石を探す内に恐ろしい陰謀に巻き込まれていくエルリック兄弟の旅を描いた冒険物語です。兄エドは失った腕の代わりに鋼の腕を使い錬金術を繰り広げることから鋼の錬金術師と呼ばれるようになります。その錬金術で敵ホムンクルスに立ち向かいつつ過酷な試練を乗り越え成長していきます。劇中の錬金術のアクションと師弟愛や友情の感動的なストーリーが魅力となっています。
+         <br><a href="https://www.hagaren.jp/">TVアニメ「鋼の錬金術師」公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="nichijyou">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>日常のおすすめのアニメは</h1>
+        <p class="Condition-text"><b>ご注文はうさぎですか？</b>
+          <br>ご注文はうさぎですか？、通称ごちうさはカフェ『ラビットハウス』を舞台にチノとココアを中心として5人の少女たちが織りなす、ほんわか癒やし系日常コメディです。あなたに珈琲で彩る心温まる時間をお届けします。ぜひあなたも優しいひとときをお過ごしください。
+          <br><a href="https://gochiusa.com/bloom/">TVアニメ「ご注文はうさぎですか？BLOOM」公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>けいおん！</b>
+          <br>放課後のバンド練習とティータイムをこよなく愛する5人の軽音部の女子高校生のほんわかした日常が描かれています。天然な主人公唯を中心に個性的なメンバーがそろっています。すてきなオリジナル曲の数々にも注目です。
+          <br><a href="https://www.tbs.co.jp/anime/k-on/">TBSアニメーション・けいおん！公式ホームページ</a>
+        </p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="hora">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>ホラーのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>ひぐらしのなく頃に</b>
+          <br>寧静な村に隠された恐怖の謎が描かれています。ひぐらしのなく頃には、主人公・圭一の視点で語られる、連続する連死事件と怪奇現象に迫る心理ホラーアニメとなっています。友情と狂気の狭間で織り成される不気味なストーリーが、視聴者を引き込み、予測不可能な展開に驚かせます。衝撃的な転機と深い謎が絡み合い、恐怖の網に捕らえられた村の真実を解き明かします。
+          <br><a href="https://higurashianime.com/">TVアニメ「ひぐらしのなく頃に業・卒」公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>東京喰種トーキョーグール</b>
+          <br>東京喰種トーキョーグールは、人と喰種の共存と戦いを描く、ダークファンタジーアニメです。主人公・金木研が人間と喰種の両方の存在を抱え、苦悩と戦いに立ち向かう物語です。彼が喰種としての力と人間としての心の間で葛藤する姿が描かれています。緊迫感あるバトルと深い哲学的テーマが魅力で、衝撃的なストーリーが視聴者を引き込みます。人間と怪物の世界の境界で揺れ動くダークファンタジーが心に残ることでしょう。
+          <br><a href="https://www.marv.jp/special/tokyoghoul/first/index.html">TVアニメ『東京喰種トーキョーグール』公式サイト</a>
+        </p> 
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="fantasy">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>ファンタジーのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>FAIRY TAIL</b>
+          <br>FAIRY TAILは、魔導士ギルド「フェアリーテイル」における主人公ナツの活躍を描く冒険ファンタジーアニメです。ナツを中心にルーシィ、グレイなど個性豊かな仲間たちが、勇気を胸に戦い友情を深めながら成長していく姿を描きます。魔法の世界で繰り広げられるスリリングなバトルとコミカルな日常そして感動のストーリーが魅力です。笑いと涙の感動を届ける人気シリーズの冒険譚です。
+          <br><a href="https://www.fairytail-tv.com/">TVアニメ「FAIRY TAIL」ファイナルシリーズ公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>魔法使いの嫁</b>
+          <br>運命に導かれ、異世界の魔法使いとして新たな人生が始まります。魔法使いの嫁は、孤独な少女・チセと神秘的な魔法使い・エリアスの心温まる物語になっています。魔法とファンタジーが織り成す美しい世界と、成長と愛の絆が描かれます。驚異の絵画美と心の葛藤が織り交ぜられ、彼らの心の成長と幸せな日々が魅力的に描かれています。ファンタジーとロマンスが見事に融合した感動的な作品です。
+          <br><a href="https://mahoyome.jp/">TVアニメ「魔法使いの嫁 SEASON2」</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="cook">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>料理のおすすめのアニメは</h1>
+        <p class="Condition-text"><b>かくりよの宿飯</b>
+          <br>かくりよの宿飯は、あやかしたちが集まる旅館「天神屋」を舞台に繰り広げられる、ほっこり和風ファンタジーアニメです。主人公の葵が「天神屋」の中にあやかし専門の食事処「夕がお」を開き、食事を通してあやかしたちと心を通わせていく姿を描きます。個性的で愉快なあやかしたちとの不思議な日常が描かれ、心温まるストーリーが展開されていきます。「天神屋」を治める鬼神の大旦那様と葵のラブストーリーでもあります。日本の伝統文化や和の風景を感じる、あやかしの世界と美味しそうな料理の数々に心惹かれることでしょう。
+          <br><a href="http://kakuriyo-anime.com/">TVアニメ『かくりよの宿飯（やどめし）』公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>食戟のソーマ</b>
+          <br>食戟のソーマは、料理界の頂点を目指す少年・創真の成長を描くグルメバトルアニメです。名門料理学校「遠月学園」での厳しい料理バトルと友情の物語となっています。創真が才能と努力でライバルと戦い、美食を競い合う様子が描かれます。個性豊かなキャラクターたちとの交流や、熱い闘志の中で繰り広げられる感動の料理合戦に心躍ること間違いなしです！食欲と感動が満載の、お腹も心も満たされる一品です。
+          <br><a href="http://shokugekinosoma.com/">SHOKUGEKI NO SOMA PORTAL</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="humandrama">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>ヒューマンドラマのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>3月のライオン</b>
+          <br>3月のライオンは、将棋と青春をテーマにした感動のアニメです。孤独な将棋プロ棋士・桐山零が、倒れていたところを助けられたことがきっかけで仲良くなった三姉妹との交流を通じて心の傷から少しずつ救われていく物語です。零の孤独や心の葛藤、3姉妹とのあたたかな絆、そこからの友情や成長が描かれています。美しい絵と深い心理描写が魅力で、涙と笑顔が交差する感動の物語が心に残ることでしょう。
+          <br><a href="https://3lion-anime.com/">TVアニメ「3月のライオン」公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>フルーツバスケット</b>
+          <br>フルーツバスケットは、弱いことは悪いことではないということを教えてくれる、癒しのハートウォーミングな物語です。両親を失っても前向きに生きる女子高生の透は、12の干支に変身してしまう同級生の少年とその一族との運命的な出会いを通じて、家族のような絆と真実の愛を見つけていきます。彼らの心の成長と絆の深まりが描かれ、ファンタジーと笑いと涙が交錯する感動の人間ドラマが見事に融合した心温まるストーリーが魅力です。
+          <br><a href="https://fruba.jp/">TVアニメ「フルーツバスケット」公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="seishun">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>青春もののおすすめのアニメは</h1>
+        <p class="Condition-text"><b>坂道のアポロン</b>
+          <br>ジャズに魅せられた少年達が織りなす、音楽と友情の青春アニメである坂道のアポロンは、ジャズの魅力にひかれた西見薫と川渕千太郎を中心に絆を深めながら成長する姿を描いています。ジャズのリズムと感動的な演奏が心を揺さぶります。音楽を通して悩みや孤独に立ち向かいながら、真の友情を見い出し、成長する姿が心温まる作品となっています。リアルなキャラクターと熱い演奏に心奪われることでしょう。
+          <br><a href="https://www.noitamina-apollon.com/">アニメ「坂道のアポロン」公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>響け！ユーフォニアム</b>
+          <br>青春の響きと感動が満ちる音楽アニメである「響け！ユーフォニアム」は、吹奏楽部の少女たちが、夢と情熱を胸に楽器を奏でる姿を描いています。主人公・黄前久美子が音楽と友情に向き合い、成長していく姿が感動的です。音楽の魅力と努力の大切さが描かれ、心温まるストーリーが展開されています。美しい音楽とリアルな学生生活が共鳴し、視聴者を引き込みます。感動と涙の共鳴を体感できる、心に残る作品です。
+          <br><a href="http://tv.anime-eupho.com/">TVアニメ『響け!ユーフォニアム』公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>ホリミヤ</b>
+          <br>堀さんと宮村くんを中心に様々な人が集まり関わり合いながら高校生の頃のありふれた日常が楽しく描かれています。みんな悩みをかかえて少し自分が嫌になる時があっても、そんな自分ごと受け入れてくれる友人や家族がいることが描かれている物語となっています。高校生の恋愛、友情など青春の全てが詰まっている超美炭酸系スクールライフストーリーになっています。
+          <br><a href="https://horimiya-anime.com/">TVアニメ「ホリミヤ-piece-」公式サイト</a>
+        </p>        
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="sport">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>スポーツのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>ブルーロック</b>
+          <br>「ブルーロック」のテーマは、トップクラスのサッカー選手になるということを追求することです。無名のサッカー選手たちが「神のストライカー」となるために過酷なトライアルを闘っていきます。物語は主人公、潔与一がブルーロックプログラムに選ばれるところから始まり、自身の才能と情熱を証明しながら天才ばかりが集まったチームメイトとの激しい競争に立ち向かいます。このアニメは野心あふれるサッカーの世界で頂点を極めるために必要なことを主人公が身につけて成長していく物語です。
+          <br><a href="https://bluelock-pr.com/">TVアニメ『ブルーロック』公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>ハイキュー!!</b>
+          <br>熱血バレーボール青春アニメ！ハイキューは、小さな身体だが才能にあふれていた高校バレーボール選手「小さな巨人」に憧れる日向翔陽が、バレーボールに情熱を燃やし、強豪校の強豪選手たちと戦う姿を描いています。主人公日向とパートナー影山を中心にチームメイトやライバルたちの成長と絆が物語の核となっています。手に汗にぎる試合とたたかった相手とも育まれていく友情が魅力で、心躍る演出と感動のストーリーが満載です。情熱と努力を胸に、勝利を目指す少年たちの姿に共感し、熱い応援が湧き起こる、バレーボールを愛するすべての人に贈る名作アニメです。
+          <br><a hred="https://haikyu.jp/">劇場版-アニメ『ハイキュー!!』公式サイト-</a>
+        </p>
+        <p class="Condition-text"><b>Free!</b>
+          <br>Free!は、競泳を通して少年たちの青春と友情を描いています。主人公・七瀬遥が泳ぐことにより仲間たちとの絆を深め、成長していく姿が感動的です。特に仲間との絆が大切になる競泳科目リレーのシーンは感動的です。美しい水泳シーンと心温まるストーリーが魅力で、青春の輝きがあふれています。競泳を通して広がる仲間の輪に視聴者も引き込まれることでしょう。水泳の爽快感が広がる、感動のスポーツアニメです。
+          <br><a href="http://iwatobi-sc.com/">『Free! Series Portal Site』</a>
+        </p>
+        <p class="Condition-text"><b>ツルネ</b>
+          <br>ツルネは弓道を愛する高校生たちの友情と青春の物語です。主人公・成宮湊が高校の弓道部に入部し、再び弓道に向かい合うことにより弓道への情熱を再確認するとともに仲間たちとの絆を深めていく姿が感動的です。美しい弓道のシーンと心温まるストーリーが魅力で、青春の輝きが溢れています。チームが一丸となることが大切な弓道の試合で、彼らが輝きを放つ姿とその絆に共感することでしょう。京都アニメーションならではの心温まる作品となっています。
+          <br><a href="http://tsurune.com/">『ツルネーつながりの一射ー』公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="idol">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>アイドルのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>アイドリッシュセブン</b>
+          <br>IDOLiSH7の7人を中心としてTRIGGER、Re:vale、ŹOOĻの4つのアイドルグループの活動が描かれています。アイドルとして輝く彼らが困難を乗り越え成長していく姿を見届けるとともに、アイドルを離れた彼らの日常を垣間見ることもできます。また何度も聞きたくなるような楽曲も魅力の一つです。
+          <br><a href="https://idolish7.com/">アイドリッシュセブン</a>
+        </p>
+        <p class="Condition-text"><b>ラブライブ！</b>
+          <br>ラブライブ！は、スクールアイドルグループ「μ's」が学校を救うために歌と踊りでラブライブ！に出場し優勝を目指す姿を描きます。主人公・高坂穂乃果とメンバーたちがスクールアイドル活動の中で学年を超えて絆を深め、夢に向かって奮闘します。輝くステージと心温まる友情が魅力で、熱いパフォーマンスが視聴者の心を鷲掴みにします。歌と笑顔が生み出す、青春と感動のストーリーにより彼女たちを応援したくなるキラキラのスクールアイドルアニメになっています。
+          <br><a href="https://www.lovelive-anime.jp/">ラブライブ!シリーズOfficial Web Site</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="love">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>ラブコメのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>お隣の天使様にいつの間にか駄目人間にされていた件</b>
+          <br>お互いを大切に想いあう少しじれったいけれども優しい恋物語です。主人公藤宮周はたまたま「天使様」とよばれている同級生の椎名真昼の隣人となります。そんな彼女に傘を貸したことをきっかけに話すようになり、お互いの知らない素顔を知るうちに大切な存在へとなっていくすてきなお話になっています。2人にしか出せない何とも言えない空気感、雰囲気がとても良いです。お互いがお互いを補い合う関係、唯一無二の関係になっていく過程は必見です。
+          <br><a href="https://otonarino-tenshisama.jp/">TVアニメ『お隣の天使様にいつの間にか駄目人間にされていた件』公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>からかい上手の高木さん</b>
+          <br>からかい上手の高木さんは、日常の微笑ましいいたずらと純粋な恋心が交錯する、キュートなラブコメディアニメです。高木さんという美少女が、同級生の西片くんに対して、巧妙なからかいを仕掛ける姿を描きます。彼女の天才的なからかいの技術と彼の純粋な気持ちが織り成すドキドキの日常が、微笑ましい笑いと共に展開されます。彼らの心の距離が徐々に縮まっていく、ほのぼのとした物語に胸がキュンとなることでしょう。
+          <br><a href="https://takagi3.me/1st/">TVアニメ「からかい上手の高木さん」公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="kando">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>感動もののおすすめのアニメは</h1>
+        <p class="Condition-text"><b>ヴァイオレット・エヴァ―ガーデン</b>
+          <br>ヴァイオレット・エヴァーガーデンは、元軍人の少女ヴァイオレットが手紙の代書の仕事を通じて人々の思いを届けると同時にその人々の色々な「愛」を知ることにより自分の「愛」とは何かを見つけていく物語になっています。戦争で感情を失い、愛する人と別れた彼女が、仕事を通じて心の成長と共に愛や悲しみを理解していく姿が描かれています。美しい絵と深い感情描写が魅力的で、涙と感動が交錯するストーリーに心が揺さぶられます。愛と希望に満ちた、心温まる人間ドラマが心に残ります。
+          <br><a href="http://tv.violet-evergarden.jp/">TVアニメ『ヴァイオレット・エヴァ―ガーデン』公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>あの日見た花の名前を僕達はまだ知らない。</b>
+          <br>あの日見た花の名前を僕達はまだ知らないは、少年少女たちの淡い青春と過去の秘密が交錯する、感動の青春アニメです。仲間たちが幼い頃の出来事をきっかけに再会し、過去の謎を解いていく物語になっています。主人公たちが笑顔と涙を分かち合いながら成長していく姿が描かれます。美しい絵と切ないストーリーが、視聴者の心に深く残ります。友情と約束の絆が重なり合う、心温まるアニメが心を動かすことでしょう。
+          <br><a href="https://www.anohana.jp/tv/">あの日見た花の名前を僕達はまだ知らない。|アニメ公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="darkhiro">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>悪役令嬢のおすすめのアニメは</h1>
+        <p class="Condition-text"><b>乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…</b>
+          <br>転生した悪役令嬢が運命に抗い、奮闘する異色の乙女ゲームアニメとなっています。主人公・カタリナが自らの運命を知り、未来を変えるために奮闘する姿を描いています。彼女は悪役令嬢となる運命を回避し、周囲のキャラクターたちと絆を深めていきます。軽快なストーリーとコメディが絶妙に織り交ぜられ、驚きと笑いに満ちた楽しいアニメとなっています。ユニークな視点から描かれている、ほのぼのとした物語が心を満たします。
+          <br><a href="https://hamehura-anime.com/">TVアニメ『乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…X』</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="come">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>コメディのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>SPY×FAMILY</b>
+          <br>SPY×FAMILYは、スパイである父ロイドと超能力者である娘アーニャと殺し屋である母ヨルの即席の家族が互いの利害と国際平和のために共に暮らす中で絆がうまれていくアクションコメディアニメです。スパイであるロイドは任務のために偽の家族を作ることになるが、選んだ家族のメンバーもそれぞれが秘密を抱えていたのです。ロイドがスパイの腕を活かしつつ、アーニャやヨルに振り回されたり助けられたりしながら家族として成長していく姿が描かれています。スパイの戦いと家族の絆が巧みに交錯し、驚きと笑いに満ちた展開が魅力となっています。ハートフルで楽しく、同時にスリリングなストーリーが見どころです。
+          <br><a href="https://spy-family.net/">アニメ『SPY×FAMILY』</a>
+        </p>
+        <p class="Condition-text"><b>影の実力者になりたくて！</b>
+          <br>無能と思われている主人公シドー・カゲノーが、異世界で本当の力を持つ存在となるため奮闘する物語となっています。隠れた実力を駆使し、仲間たちと絆を深めながら、成長していく姿が描かれます。驚きの展開と戦闘シーンが魅力となっており、冒険とスリルに満ちたストーリーが心を引き込みます。非凡な力を持つ彼の冒険譚に、視聴者は夢中になることでしょう。
+          <br><a href="https://shadow-garden.jp/1st/">TVアニメ「影の実力者になりたくて！」公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="utu">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>鬱もののおすすめのアニメは</h1>
+        <p class="Condition-text"><b>魔法少女まどか☆マギカ</b>
+          <br>魔法少女まどか☆マギカは、魔法少女たちの運命が交錯する、暗く美しい魔法アニメになっています。主人公・鹿目まどかが魔法少女として戦う仲間たちと深い絆を築く物語です。魔法の力で悪と戦う彼女たちの選択と犠牲、心の葛藤が描かれ、物語は切なく展開していきます。予測不可能なストーリー展開と心を揺さぶる美しい絵画が魅力的で、深い感動と共に胸を打つ、異色の魔法アニメです。
+          <br><a href="https:/アニメth.madoka-magica.com/">魔法少女まどか☆マギカ 10周年記念サイト</a>
+        </p>
+        <p class="Condition-text"><b>がっこうぐらし！</b>
+          <br>がっこうぐらし！は、学園生活の裏に潜む闇と友情を描くサバイバルホラーアニメです。元気な少女たちが学校で楽しい日々を過ごしているように見えるのですが、実は学園が生きたゾンビの世界である物語になっています。主人公・ゆきが友達と共に生き残りながら、絆を深める姿が描かれます。謎めいた展開と心温まる絆が魅力的で、青春とサバイバルの緊張感が交錯する作品です。感動と驚きに満ちた、異色のホラーアニメが視聴者を引き込みます。
+          <br><a href="https://gakkougurashi.com/">TVアニメ「がっこうぐらし！」公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="mystery">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>ミステリーのおすすめのアニメは</h1>
+        <p class="Condition-text"><b>名探偵コナン</b>
+          <br>名探偵コナンは、名探偵の少年が難事件を解決する、長寿推理アニメです。高校生探偵・工藤新一が毒薬を盛られて小さな体になり、「江戸川コナン」として事件を解決する物語となっています。彼が知識と推理力を駆使して難事件に立ち向かう姿が描かれます。スリリングな展開と巧妙な謎が魅力となっており、緻密なストーリーが視聴者を引き込みます。努力と頭脳で事件を解決する少年探偵の活躍が、長年愛されるアニメの魅力です。
+          <br><a href="https://www.ytv.co.jp/conan/">名探偵コナン</a>
+        </p>
+        <p class="Condition-text"><b>サマータイムレンダ</b>
+          <br>主人公・網代慎平は幼馴染である小舟潮の訃報を聞き、葬儀に参列するため、2年ぶりに故郷へ戻ってきました。故郷には「影」という謎の存在に潮の謎の死、謎だらけの中で慎平は謎を解いていく。ある夏の日のタイムリープSFサスペンスとなっています。
+          <br><a href="https://summertime-anime.com/">TVアニメ『サマータイムレンダ』</a>
+        </p>
+        <p class="Condition-text"><b>探偵はもう、死んでいる。</b>
+          <br>名探偵であるシエスタは物語開始時点で死んでいます。そこから過去の時間軸に戻り、主人公・君塚君彦とシエスタの物語が語られます。名探偵シエスタはなぜ死んだのかを君塚が解明していくミステリーとなっています。
+          <br><a href="https://tanmoshi-anime.jp/">TVアニメ「探偵はもう、死んでいる。」公式サイト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container" id="animal">
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h1>動物もののおすすめのアニメは</h1>
+        <p class="Condition-text"><b>しろくまカフェ</b>
+          <br>しろくまカフェは、ほっこり癒しの動物カフェアニメになっています。白くまのパンダと仲間たちが営むカフェでの日常を描いています。個性豊かな動物たちが集まり、笑いとほのぼのとしたひとときが広がります。ほっこりとした絵と心温まるストーリーが魅力となっており、癒しのひとときを届ける白熱のアニメです。動物たちのふしぎなコミュニケーションと仲良しの絆が、視聴者の心を温かく包み込むことでしょう。
+          <br><a href="https://shirokumacafe.jp/">TVアニメ「しろくまカフェ」公式サイト</a>
+        </p>
+        <p class="Condition-text"><b>けものフレンズ</b>
+          <br>けものフレンズは、不思議な動物たちとの冒険が織り成す、愛らしいファンタジーアニメです。ジャパリパークで暮らす動物フレンズたちの心温まる交流を描いています。主人公サーバルが不安定なジャパリ図書館を目指す姿が感動的です。個性的なフレンズたちとの冒険と謎解きが展開され、笑いと感動が溢れる物語となっています。ふんわりとしたアートワークとほっこりしたストーリーが魅力的で、視聴者を優しい気持ちにさせる、ほのぼのファンタジーアニメです。
+          <br><a href="https://kemono-friends.jp/">けものフレンズプロジェクト</a>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-2">
+      <div class="col text-center mt-2">
+        <a class="btn-move" href="#title"><button type="button" class="btn btn-primary btn-lg">Top</button></a>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  <!--   jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>

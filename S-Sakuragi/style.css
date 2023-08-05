@@ -1,0 +1,10 @@
+body{
+background-color: black;
+}
+
+.carousel-inner {
+  margin: 40px auto;
+  width: 30%;
+  object-fit: cover;
+  padding: 20px 60px;
+}

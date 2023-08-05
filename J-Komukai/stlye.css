@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(45deg, #f64851, #5be93f, #6c4ef2, #33A8FF, #ffff33); /* グラデーションの色のリスト */
+  background-size: 400% 400%; /* グラデーションのサイズを拡大 */
+  animation: changeBackground 10s ease infinite; /* 10秒かけてグラデーションをループアニメーション */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-position: 0% 50%; /* グラデーションの開始位置 */
+  }
+  100% {
+    background-position: 100% 50%; /* グラデーションの終了位置 */
+  }
+}
